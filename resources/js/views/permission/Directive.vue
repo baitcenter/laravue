@@ -54,6 +54,13 @@
         </span>
         <el-tag v-permission="['manage user']" class="permission-sourceCode" type="info">v-permission="['manage user']"</el-tag>
       </div>
+
+      <div>
+        <span v-permission="['manage user']" v-role="['admin']" class="permission-alert">
+          You can see this if you are <el-tag class="permission-tag" size="small">admin</el-tag> <strong>AND</strong> you have <el-tag class="permission-tag" size="small">manage user</el-tag> permission
+        </span>
+        <el-tag v-permission="['manage user']" class="permission-sourceCode" type="info">v-permission="['manage user']" v-role="['admin']"</el-tag>
+      </div>
     </div>
 
     <div :key="'checkPermission'+key" style="margin-top:60px;">
@@ -101,11 +108,11 @@
 import permission from '@/directive/permission'; // Permission directive (v-permission)
 import role from '@/directive/role'; // Permission directive (v-role)
 import checkPermission from '@/utils/permission'; // Permission checking
-import checkRole from '@/utils/role'; // Permission checking
+import checkRole from '@/utils/role'; // Role checking
 import SwitchRoles from './components/SwitchRoles';
 
 export default {
-  name: 'DirectivePermission',
+  name: 'directivePermission',
   components: { SwitchRoles },
   directives: { permission, role },
   data() {
@@ -126,7 +133,7 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .app-container {
   /deep/ .permission-alert {
-    width: 420px;
+    width: 600px;
     margin-top: 15px;
     background-color: #f0f9eb;
     color: #67c23a;
