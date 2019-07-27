@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/vue-2.6.10-brightgreen.svg" alt="vue">
   </a>
   <a href="https://github.com/ElemeFE/element">
-    <img src="https://img.shields.io/badge/element--ui-2.7.2-brightgreen.svg" alt="element-ui">
+    <img src="https://img.shields.io/badge/element--ui-2.10.1-brightgreen.svg" alt="element-ui">
   </a>
   <a href="https://github.com/tuandm/laravue/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="license">
